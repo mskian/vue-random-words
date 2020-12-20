@@ -159,6 +159,7 @@ a:hover, a:focus, a:active {
     color: #ffffff;
 }
 .read-more {
+  font-family: 'Baloo Thambi 2', cursive;
 	font-weight: 800;
 	font-size: 23px;
 	padding: 16px;
@@ -173,6 +174,7 @@ a:hover, a:focus, a:active {
 .read-random {
 	display: flex;
 	flex-grow: 0.3;
+  font-family: 'Baloo Thambi 2', cursive;
 	font-weight: 800;
 	font-size: 13px;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
