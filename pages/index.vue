@@ -38,8 +38,9 @@
           <div class="buttons is-centered">
             <button class="button is-warning read-random" @click.prevent="getResult">
               {{ loading ? "Loading data..." : "🔁 Random" }}
-            </button> <button
-              v-clipboard:copy="results.word"
+            </button>
+            <button
+              v-clipboard:copy="'✍️ Word: ' + results.word + '\n\n📚 Definition: ' + results.definition + '\n\n🗣️ Pronunciation: ' + results.pronunciation "
               v-clipboard:success="onCopy"
               v-clipboard:error="onError"
               class="btn button is-link read-random"
@@ -95,6 +96,7 @@ export default {
     }
   }
 }
+
 </script>
 
 <style>
