@@ -9,14 +9,14 @@
             Random Words 🍔
           </h1>
           <p class="has-text-success has-text-weight-bold has-text-centered">
-            Click Random Button to Get Random Words, Definition and Pronunciation.
+            Click Random Button to Get Random Words with Definition and Pronunciation.
           </p>
           <div class="buttons is-centered">
             <button id="installPWA" class="button is-info read-random" @click.prevent="showInstallPrompt()">
               ⚛ Install App
             </button>
           </div>
-          <div class="table table is-bordered table is-striped table is-narrow table is-hoverable">
+          <div class="table is-bordered is-striped is-narrow is-hoverable">
             <table>
               <tbody>
                 <tr>
@@ -79,13 +79,13 @@ export default {
     getResult () {
       this.loading = true
       axios.get('https://san-random-words.vercel.app/').then((response) => { this.results = response.data[0]; this.loading = false })
-      this.$toast.success('Words Updated', {
+      this.$toast.success('New Word Updated', {
         duration: 500
       }
       )
     },
     onCopy (e) {
-      this.$toast.info('Words Copied', {
+      this.$toast.info('Word Copied', {
         duration: 500
       }
       )
@@ -190,34 +190,6 @@ textarea,
 button {
     max-width: 100%;
 }
-.pwa-button {
-    font-weight: 700;
-    font-size: 14px;
-    text-transform: uppercase;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    border-radius: 32px;
-    padding: 12px;
-    -moz-osx-font-smoothing: grayscale;
-   -webkit-font-smoothing: antialiased !important;
-   -moz-font-smoothing: antialiased !important;
-   text-rendering: optimizelegibility !important;
-	width: 12rem !important;
-	min-height: 2.6rem;
-}
-.pwa-buttons {
-    font-weight: 700;
-    font-size: 14px;
-    text-transform: uppercase;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    border-radius: 32px;
-    padding: 8px;
-    -moz-osx-font-smoothing: grayscale;
-   -webkit-font-smoothing: antialiased !important;
-   -moz-font-smoothing: antialiased !important;
-   text-rendering: optimizelegibility !important;
-	width: 10rem !important;
-	min-height: 2.5rem;
-}
 table {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     padding: 12px;
@@ -227,25 +199,12 @@ table {
    text-rendering: optimizelegibility !important;
    border-bottom:2px solid #bbb !important;background-color:#d3d3d3
 }
+th {
+   white-space: nowrap;
+}
 .cooked table thead,.d-editor-preview table thead{border-bottom:2px solid #bbb !important;background-color:#d3d3d3}.cooked table tr,.d-editor-preview table tr{border-bottom:1px solid #bbb}
 .is-horizontal-center {
     justify-content: center;
-}
-.buttonpwa {
-	display: inline-flex;
-	margin: 4px 0;
-	padding: 8px 16px;
-	border-radius: 4px;
-	background-color: rgb(253, 98, 37);
-	color: #fff;
-	font-size: 18px;
-	cursor: pointer;
-	align-items: center;
-	justify-content: center;
-	flex-grow: 1;
-}
-.buttonpwa:hover {
-    background-color: rgb(248, 221, 68);
 }
 code {
     word-break: break-all;
