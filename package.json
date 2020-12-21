@@ -35,7 +35,7 @@
     "axios": "^0.21.0",
     "core-js": "^3.8.1",
     "lodash": "^4.17.20",
-    "nuxt": "^2.14.6",
+    "nuxt": "^2.14.12",
     "nuxt-clipboard2": "^0.2.1"
   },
   "devDependencies": {
