@@ -20,16 +20,16 @@
             <table>
               <tbody>
                 <tr>
-                  <th>🗃 Word:</th>
-                  <td>{{ results.word }}</td>
+                  <th>✍️ Word:</th>
+                  <td>{{ loading ? "Loading data..." : results.word }}</td>
                 </tr>
                 <tr>
-                  <th>📋 Definition:</th>
-                  <td>{{ results.definition }}</td>
+                  <th>📚 Definition:</th>
+                  <td>{{ loading ? "Loading data..." : results.definition }}</td>
                 </tr>
                 <tr>
                   <th>🗣 Pronunciation:</th>
-                  <td>{{ results.pronunciation }}</td>
+                  <td>{{ loading ? "Loading data..." : results.pronunciation }}</td>
                 </tr>
               </tbody>
             </table>

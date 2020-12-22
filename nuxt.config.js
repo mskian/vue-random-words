@@ -35,6 +35,13 @@ export default {
         content: 'Random Words'
       },
       {
+        hid: 'og:image',
+        property: 'og:image',
+        content: 'https://wordsonrandom.netlify.app/media/random-word.jpg'
+      }
+    ],
+    link: [
+      {
         rel: 'shortcut icon',
         href: '/icons/Icon-32.png'
       },
@@ -68,11 +75,7 @@ export default {
         sizes: '512x512',
         href: '/icons/Icon-192.png'
       },
-      {
-        hid: 'og:image',
-        property: 'og:image',
-        content: 'https://wordsonrandom.netlify.app/media/random-word.jpg'
-      }
+      { rel: 'dns-prefetch', href: 'https://fonts.googleapis.com' }
     ]
   },
   loading: { color: '#e84b0d' },
