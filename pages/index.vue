@@ -21,15 +21,15 @@
               <tbody>
                 <tr>
                   <th>✍️ Word:</th>
-                  <td>{{ loading ? "Loading data..." : results.word }}</td>
+                  <td>{{ loading ? "Generate New Word" : results.word }}</td>
                 </tr>
                 <tr>
                   <th>📚 Definition:</th>
-                  <td>{{ loading ? "Loading data..." : results.definition }}</td>
+                  <td>{{ loading ? "Generate Definition" : results.definition }}</td>
                 </tr>
                 <tr>
                   <th>🗣 Pronunciation:</th>
-                  <td>{{ loading ? "Loading data..." : results.pronunciation }}</td>
+                  <td>{{ loading ? "Generate Word Pronunciation" : results.pronunciation }}</td>
                 </tr>
               </tbody>
             </table>
@@ -37,7 +37,7 @@
           <br>
           <div class="buttons is-centered">
             <button class="button is-warning read-random" @click.prevent="getResult">
-              {{ loading ? "Loading data..." : "🔄 Random" }}
+              {{ loading ? "🔄 Generate" : "🔄 Random" }}
             </button>
             <button
               v-clipboard:copy="'✍️ Word: ' + results.word + '\n\n📚 Definition: ' + results.definition + '\n\n🗣️ Pronunciation: ' + results.pronunciation "
@@ -64,7 +64,8 @@ export default {
   data () {
     return {
       showInstallPrompt: null,
-      results: {}
+      results: {},
+      loading: false
     }
   },
   async mounted () {
