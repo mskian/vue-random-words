@@ -13,7 +13,7 @@
           </p>
           <div class="buttons is-centered">
             <button id="installPWA" class="button is-info read-random" @click.prevent="showInstallPrompt()">
-              ⚛ Install App
+              🍪 Install App
             </button>
           </div>
           <div class="table is-bordered is-striped is-narrow is-hoverable">
@@ -37,7 +37,7 @@
           <br>
           <div class="buttons is-centered">
             <button class="button is-warning read-random" @click.prevent="getResult">
-              {{ loading ? "🔄 Generate" : "🔄 Random" }}
+              {{ loading ? "🔄 Generating" : "🔄 Random" }}
             </button>
             <button
               v-clipboard:copy="'✍️ Word: ' + results.word + '\n\n📚 Definition: ' + results.definition + '\n\n🗣️ Pronunciation: ' + results.pronunciation "
@@ -101,13 +101,13 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
 body {
   font-size: 16px;
   background-color: #1d3557;
   height: 100vh;
   color: rgba(0, 0, 0, 0.6);
-  font-family: 'Baloo Thambi 2', cursive;
+  font-family: 'Fira Code', monospace;
   font-weight: 600;
   line-height: 1.618;
 	-webkit-font-smoothing: antialiased;
@@ -160,8 +160,8 @@ a:hover, a:focus, a:active {
     color: #ffffff;
 }
 .read-more {
-  font-family: 'Baloo Thambi 2', cursive;
-	font-weight: 800;
+  font-family: 'Fira Code', monospace;
+	font-weight: 700;
 	font-size: 23px;
 	padding: 16px;
   color: rgb(248, 244, 183);
@@ -175,8 +175,8 @@ a:hover, a:focus, a:active {
 .read-random {
 	display: flex;
 	flex-grow: 0.3;
-  font-family: 'Baloo Thambi 2', cursive;
-	font-weight: 800;
+  font-family: 'Fira Code', monospace;
+	font-weight: 700;
 	font-size: 13px;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 	border-radius: 32px;
