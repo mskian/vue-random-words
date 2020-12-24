@@ -1,0 +1,5 @@
+# Netlify redirects file, edit with your domain
+# https://www.netlify.com/docs/redirects/
+
+https://wordsonrandom.netlify.app/* https://words.sanweb.info/:splat 301!
+http://wordsonrandom.netlify.app/* https://words.sanweb.info/:splat 301!

@@ -11,7 +11,7 @@ export default {
       link: [
         {
           rel: 'canonical',
-          href: 'https://wordsonrandom.netlify.app' + this.$route.path
+          href: 'https://words.sanweb.info' + this.$route.path
         }
       ]
     }

@@ -37,7 +37,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://wordsonrandom.netlify.app/media/random-word.jpg'
+        content: 'https://words.sanweb.info/media/random-word.jpg'
       }
     ],
     link: [
