@@ -1,14 +1,34 @@
-# Vue Random Words
+# Random Words 🔀
 
 ![build-test](https://github.com/mskian/vue-random-words/workflows/build-test/badge.svg)  
 
-Get Real-time Random Words Without Refreshing the page.
+Random Words - Get Random Words with Definition and Pronunciation.
 
-## API
+## Features ✨
+
+- Realtime Words data
+- Progressive Web App
+- Sitemap
+- RSS feed
+- SEO and Social Meta Tags
+- Schema Markup
+- Canonical URL
+- Offline Support
+- Mobile Responsive (Build using Bulma CSS Framework)
+
+## API 🍘
 
 Free Random Words API Thanks to - [@mcnaveen](https://github.com/mcnaveen/Random-Words-API)
 
-## Build Setup
+## Built with ⚙
+
+- HTML
+- CSS, Bulma CSS Framework
+- JavaScript
+- Vue
+- Nuxt
+
+## Build Setup 📦
 
 ```bash
 # install dependencies
@@ -25,8 +45,6 @@ $ yarn start
 $ yarn generate
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
-
-## LICENSE
+## LICENSE ✅
 
 MIT
