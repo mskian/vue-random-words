@@ -65,7 +65,7 @@
             </p>
             <br>
             <div class="buttons is-centered">
-              <a href="https://github.com/mskian/vue-random-words" class="button is-success read-random" target="_blank" rel="nofollow noopener">📦 Souce Code</a>
+              <a href="https://github.com/mskian/vue-random-words" class="button is-success read-random" target="_blank" rel="nofollow noopener">📦 Source Code</a>
               <a href="https://github.com/mcnaveen/Random-Words-API" class="btn button is-link read-random" target="_blank" rel="nofollow noopener">🗃 API Data</a>
             </div>
             <br>
